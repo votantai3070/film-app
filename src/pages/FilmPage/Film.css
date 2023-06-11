@@ -1,3 +1,9 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -5,6 +11,7 @@ nav {
   flex-direction: column;
   flex-wrap: wrap;
 }
+
 ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -14,11 +21,23 @@ ul {
 li {
   list-style: none;
 }
+
 h2 {
   text-align: center;
-  padding-top: 10px;
 }
-.form .img {
+
+.form {
+  width: 500px;
+  height: 500px;
+  background-color: rgba(153, 98, 98, 0.219);
+  box-shadow: 2px 2px 4px 2px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
   width: 300px;
   height: 350px;
   margin: 0 auto;
@@ -29,17 +48,15 @@ img {
   width: 100%;
   object-fit: fill;
 }
-.form {
-  width: 500px;
-  height: 500px;
-  background-color: rgba(153, 98, 98, 0.219);
-  box-shadow: 2px 2px 4px 2px black;
-}
+
 .footer {
   display: flex;
   justify-content: space-around;
-  padding-top: 30px;
+  align-items: center;
+  padding-top: 10px;
+  width: 500px;
 }
+
 span {
   text-align: center;
   font-weight: 700;
@@ -58,26 +75,26 @@ span {
   0% {
     background-position: 0%;
   }
-
   100% {
     background-position: 100%;
   }
 }
+
 .footer button {
   background-color: rgb(47, 138, 85);
   border: none;
   border-radius: 10px;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 600;
   cursor: pointer;
+  color: #fff;
+  padding: 5px 8px;
 }
-.footer button a {
-  text-decoration: none;
-  color: white;
-}
+
 .footer button:hover {
   background-color: rgb(44, 206, 111);
 }
+
 .overlay {
   position: fixed;
   top: 0;
@@ -89,10 +106,12 @@ span {
   visibility: hidden;
   opacity: 0;
 }
+
 .overlay:target {
   visibility: visible;
   opacity: 1;
 }
+
 .popup {
   margin: 200px auto;
   padding: 5px;
@@ -106,15 +125,18 @@ span {
   justify-content: center;
   flex-direction: column;
 }
+
 .popup img {
   max-width: 60%;
   max-height: 100%;
 }
+
 .popup h2 {
   margin-top: 0;
   color: #333;
   font-family: Tahoma, Arial, sans-serif;
 }
+
 .popup .close {
   position: absolute;
   top: 20px;
@@ -125,9 +147,11 @@ span {
   text-decoration: none;
   color: #333;
 }
+
 .popup .close:hover {
   color: #06d85f;
 }
+
 .popup .content {
   max-height: 30%;
   overflow: hidden;
