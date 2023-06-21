@@ -1,161 +1,78 @@
 .header {
   display: flex;
-  align-items: center;
   justify-content: center;
-}
-
-nav {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
+  height: 1600px;
 }
-
-ul {
+.header nav {
+  width: 1500px;
+}
+.header nav ul {
+  list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 70px;
+  gap: 50px;
+  margin: 0 auto;
+  padding-top: 50px;
 }
 
-li {
-  list-style: none;
-}
-
-h2 {
-  text-align: center;
-}
-
-.form {
-  width: 500px;
-  height: 500px;
-  background-color: rgba(153, 98, 98, 0.219);
-  box-shadow: 2px 2px 4px 2px black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.img {
-  width: 300px;
-  height: 350px;
+.header nav li {
   margin: 0 auto;
 }
 
-img {
-  height: 100%;
+.form {
+  background-color: #f7f7f7;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 400px;
+}
+
+.form h2 {
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0;
+}
+
+.img {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.img img {
   width: 100%;
-  object-fit: fill;
+  height: 100%;
 }
 
 .footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 10px;
-  width: 500px;
+  padding: 10px;
 }
 
-span {
-  text-align: center;
-  font-weight: 700;
-  font-size: 20px;
-  color: #eee;
-  background-image: linear-gradient(to right, #eee, #f00, #fff, #f00, #eee);
-  background-repeat: no-repeat;
-  background-size: 200% auto;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  animation: span 1s linear infinite;
-}
-
-@keyframes span {
-  0% {
-    background-position: 0%;
-  }
-  100% {
-    background-position: 100%;
-  }
+.footer span {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #888;
+  font-size: 18px;
 }
 
 .footer button {
-  background-color: rgb(47, 138, 85);
+  background-color: #333;
+  color: white;
   border: none;
-  border-radius: 10px;
-  font-size: 15px;
-  font-weight: 600;
+  padding: 5px 10px;
   cursor: pointer;
-  color: #fff;
-  padding: 5px 8px;
+  border-radius: 1rem;
+  padding: 10px 20px;
 }
-
 .footer button:hover {
-  background-color: rgb(44, 206, 111);
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-.popup {
-  margin: 200px auto;
-  padding: 5px;
-  background: #fff;
-  border-radius: 5px;
-  width: 30%;
-  position: relative;
-  transition: all 2s ease-in-out;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.popup img {
-  max-width: 60%;
-  max-height: 100%;
-}
-
-.popup h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
-}
-
-.popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-
-.popup .close:hover {
-  color: #06d85f;
-}
-
-.popup .content {
-  max-height: 30%;
-  overflow: hidden;
-  text-align: justify;
-  text-indent: 20px;
-  font-weight: 500;
+  background-color: #5a5f69;
+  transition: 0.3s ease;
 }

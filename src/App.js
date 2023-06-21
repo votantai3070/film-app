@@ -5,6 +5,8 @@ import { createContext, useCallback, useEffect, useState } from "react";
 import ReactSwitch from "react-switch";
 import Details from "./pages/DetailPage/Details";
 import NotFound from "./pages/NotFound";
+import Navigation from "./component/Navigation/MenuNav";
+import ContactPage from "./pages/ContactPage/ContactPage";
 
 const ThemeContext = createContext(null);
 
@@ -24,15 +26,22 @@ function App() {
   }, [theme]);
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <div className="App" id={theme}>
-        <div className="switch">
-          <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} />
+      <div>
+        <div>
+          <Navigation />
         </div>
-        <Routes>
-          <Route path="/" element={<Film />} />
-          <Route path="/detail/:id" element={<Details />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <div className="App" id={theme}>
+          <div className="switch">
+            <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} />
+          </div>
+
+          <Routes>
+            <Route path="/detail/:id" element={<Details />} />
+            <Route path="*" element={<NotFound />} />
+            <Route path="/" element={<Film />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </div>
       </div>
     </ThemeContext.Provider>
   );
