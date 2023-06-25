@@ -2,6 +2,7 @@ import React, { memo } from "react";
 import { FilmList } from "../ListOfFilms";
 import "./Film.css";
 import { Link } from "react-router-dom";
+import SlickSlider from "../../component/ImageSlide/ImageSlider";
 
 const Film = () => {
   return (

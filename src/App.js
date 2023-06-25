@@ -7,6 +7,8 @@ import Details from "./pages/DetailPage/Details";
 import NotFound from "./pages/NotFound";
 import Navigation from "./component/Navigation/MenuNav";
 import ContactPage from "./pages/ContactPage/ContactPage";
+import SlickSlider from "./component/ImageSlide/ImageSlider";
+import HomePage from "./pages/HomePage/HomePage";
 
 const ThemeContext = createContext(null);
 
@@ -24,12 +26,14 @@ function App() {
     setTheme(nextTheme);
     localStorage.setItem("light", JSON.stringify(nextTheme === "light"));
   }, [theme]);
+
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div>
         <div>
           <Navigation />
         </div>
+
         <div className="App" id={theme}>
           <div className="switch">
             <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} />
@@ -38,7 +42,7 @@ function App() {
           <Routes>
             <Route path="/detail/:id" element={<Details />} />
             <Route path="*" element={<NotFound />} />
-            <Route path="/" element={<Film />} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </div>

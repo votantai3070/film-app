@@ -28,8 +28,9 @@
 }
 
 .navigation a:hover {
-  background-color: #555;
-  border-radius: 10px;
+  color: orangered;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .navigation a .material-icons {

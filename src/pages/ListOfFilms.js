@@ -20,11 +20,11 @@ export const FilmList = [
   {
     id: 3,
     image: "assets/Image/Film3.jpg",
-    title: "Lạc Vào Khu Rừng Đom Đóm",
-    year: "2011",
+    title: "5 Centimet Trên Giây",
+    year: "2018",
     nation: "JAPAN",
     detail:
-      "Một nữ sinh cấp ba luôn quét lá trên sân trường vào cuối chiều, lúc những phòng học mở toang cửa không còn học sinh. Giữa khoảng thời gian đang làm nhiệm vụ trực nhật ngoài sân, cô gái nghe thấy tiếng đàn guitar vang lại, lẫn vào những nhánh hoa anh đào dịu dàng. Cũng bởi tiếng nhạc du dương này, những lần trực nhật sau của cô đã hình thành một nỗi trông mong kì lạ, chỉ muốn được nghe, nghe mãi. Và cô tự hỏi chủ nhân tiếng đàn là ai. Cuối cùng, bí mật dần được hé lộ.",
+      "Cốt truyện xoay quanh mối quan hệ của một cậu bé tên Tōno Takaki với một cô gái là bạn từ khi còn đi học vào khoảng những năm 1990 cho đến thời hiện đại, nhưng giữa họ luôn có một khoảng cách và thường chỉ liên lạc với nhau từ xa qua thư hay điện thoại.",
   },
   {
     id: 4,
@@ -65,11 +65,11 @@ export const FilmList = [
   {
     id: 8,
     image: "assets/Image/Film8.jpg",
-    title: "Tengoku Daimakyou",
-    year: "2023",
+    title: "Tháng Tư Là Lời Nói Dối Của Em",
+    year: "2011",
     nation: "JAPAN",
     detail:
-      "Fifteen years ago, disaster struck human civilization, and now dangerous man-eating monsters roam the ravaged lands, posing an existential threat to the remaining survivors. Amid this turmoil, an isolated facility shelters children and nurtures them in peace. However, as a few among them find out about the world beyond the narrow periphery of their nursery's walls, their curiosity about it slowly grows.",
+      "Thần đồng piano Arima Kōsei thống trị các giải và trở nên nổi tiếng trong giới âm nhạc. Sau cái chết của mẹ, đồng thời là người dạy piano cho cậu, cậu bị suy nhược tinh thần trong một cuộc thi khi mới 11 tuổi. Sau đó, cậu không thể nghe tiếng đàn do chính mình đánh dù cậu không có vấn đề khác về thính giác. Hai năm trôi qua, Kōsei không hề chạm vào cây đàn và nhìn thế giới qua cái nhìn đơn sắc. Cậu tự giải nghệ và bước tiếp cùng với những người bạn tốt, Tsubaki và Watari, cho tới một ngày, một cô gái đã thay đổi tất cả. Miyazono Kaori, một nữ sinh cùng trường với Tsubaki, 14 tuổi, một nhạc công violin với thiên hướng tự do để những nốt nhạc phản ánh bản thân, giúp Kōsei trở lại với thế giới âm nhạc và cho cậu thấy nó là cả thế giới tự do mà không gò bó như cách cậu từng chơi. Kết cục tuy buồn, nhưng những mảnh vỡ phần ngoại truyện cũng kéo lại được một vài tháng ngày hạnh phúc.",
   },
   {
     id: 9,
