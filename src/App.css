@@ -2,12 +2,20 @@
   background-color: #eee;
 }
 #dark {
-  background-color: #202020;
+  background-color: #5a5f69;
 }
 
 #dark .contact-form,
 #dark .not-found {
   color: white;
+}
+
+#dark .navigation {
+  background-color: #eee;
+}
+
+#dark .navigation a {
+  color: orangered;
 }
 
 /* #dark .slick-dots button {

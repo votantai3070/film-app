@@ -1,5 +1,5 @@
 import React, { memo, useState } from "react";
-import { FilmList } from "../ListOfFilms";
+import { FilmList } from "../../pages/ListOfFilms";
 import "./Film.css";
 // import { Link } from "react-router-dom";
 
@@ -8,9 +8,9 @@ const Film = () => {
 
   const handleDetailClick = (filmId) => {
     if (expandedFilmId === filmId) {
-      setExpandedFilmId(null); // Đóng phần chi tiết nếu đã mở rồi
+      setExpandedFilmId(null); // Close detail if its opened
     } else {
-      setExpandedFilmId(filmId); // Mở phần chi tiết của phim được chọn
+      setExpandedFilmId(filmId); // Open detail if its closed
     }
   };
 
@@ -30,6 +30,9 @@ const Film = () => {
                   <div className="footer">
                     <span>{item.nation}</span>
                     <p>
+                      {/* <button>
+                        <Link to={`details/${item.id}`}>Detail</Link>
+                      </button> */}
                       <button onClick={() => handleDetailClick(item.id)}>
                         Detail
                       </button>

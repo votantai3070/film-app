@@ -1,5 +1,5 @@
 import React from "react";
-import Film from "../FilmPage/Film";
+import Film from "../../component/FilmPage/Film";
 import SlickSlider from "../../component/ImageSlide/ImageSlider";
 import "./HomePage.css";
 

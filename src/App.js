@@ -1,14 +1,15 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import Film from "./pages/FilmPage/Film";
+// import Film from "./pages/FilmPage/Film";
 import { createContext, useCallback, useEffect, useState } from "react";
 import ReactSwitch from "react-switch";
-import Details from "./pages/DetailPage/Details";
+// import Details from "./pages/DetailPage/Details";
 import NotFound from "./pages/NotFound";
 import Navigation from "./component/Navigation/MenuNav";
 import ContactPage from "./pages/ContactPage/ContactPage";
-import SlickSlider from "./component/ImageSlide/ImageSlider";
 import HomePage from "./pages/HomePage/HomePage";
+import AboutPage from "./pages/AboutPage/AboutPage";
+import NewPage from "./pages/NewsPage/NewPage";
 
 const ThemeContext = createContext(null);
 
@@ -40,10 +41,12 @@ function App() {
           </div>
 
           <Routes>
-            <Route path="/detail/:id" element={<Details />} />
+            {/* <Route path="/detail/:id" element={<Details />} /> */}
             <Route path="*" element={<NotFound />} />
             <Route path="/" element={<HomePage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/news" element={<NewPage />} />
           </Routes>
         </div>
       </div>
