@@ -10,9 +10,13 @@
   color: white;
 }
 
+/* #dark .slick-dots button {
+  background-color: white;
+} */
 .App {
   margin: 0 auto;
-  height: 2300px;
+  min-height: 300px;
+  margin: 0px 100px;
 }
 
 .switch {

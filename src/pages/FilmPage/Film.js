@@ -1,15 +1,25 @@
-import React, { memo } from "react";
+import React, { memo, useState } from "react";
 import { FilmList } from "../ListOfFilms";
 import "./Film.css";
-import { Link } from "react-router-dom";
-import SlickSlider from "../../component/ImageSlide/ImageSlider";
+// import { Link } from "react-router-dom";
 
 const Film = () => {
+  const [expandedFilmId, setExpandedFilmId] = useState(null);
+
+  const handleDetailClick = (filmId) => {
+    if (expandedFilmId === filmId) {
+      setExpandedFilmId(null); // Đóng phần chi tiết nếu đã mở rồi
+    } else {
+      setExpandedFilmId(filmId); // Mở phần chi tiết của phim được chọn
+    }
+  };
+
   return (
     <div className="header">
       <nav>
         <ul>
           {FilmList.map((item) => {
+            const isExpanded = expandedFilmId === item.id;
             return (
               <li key={item.id}>
                 <div className="form">
@@ -19,13 +29,19 @@ const Film = () => {
                   </div>
                   <div className="footer">
                     <span>{item.nation}</span>
-                    <Link to={`detail/${item.id}`}>
-                      <p>
-                        <button>Detail</button>
-                      </p>
-                    </Link>
+                    <p>
+                      <button onClick={() => handleDetailClick(item.id)}>
+                        Detail
+                      </button>
+                    </p>
                     <span>{item.year}</span>
                   </div>
+                  {isExpanded && (
+                    <div className="detail">
+                      <p>{item.detail}</p>
+                      {/* <a href={item.link}>link</a> */}
+                    </div>
+                  )}
                 </div>
               </li>
             );
