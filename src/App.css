@@ -6,16 +6,35 @@
 }
 
 #dark .contact-form,
-#dark .not-found {
+#dark .not-found,
+#dark .product-card {
   color: white;
 }
 
+#dark .form {
+  background-color: #202020;
+}
+
+#dark .button {
+  background-color: #f80;
+}
+
+#dark .button:hover {
+  background-color: rgb(244, 172, 90);
+}
+
 #dark .navigation {
-  background-color: #eee;
+  background-color: #f80;
 }
 
 #dark .navigation a {
-  color: orangered;
+  color: #fff;
+}
+/* #dark .title {
+  color: black;
+} */
+#dark .card:hover {
+  box-shadow: 0 2px 4px 2px #f80;
 }
 
 /* #dark .slick-dots button {

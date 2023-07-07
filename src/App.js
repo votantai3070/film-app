@@ -3,8 +3,8 @@ import "./App.css";
 // import Film from "./pages/FilmPage/Film";
 import { createContext, useCallback, useEffect, useState } from "react";
 import ReactSwitch from "react-switch";
-// import Details from "./pages/DetailPage/Details";
-import NotFound from "./pages/NotFound";
+import Details from "./pages/DetailPage/Details";
+import NotFound from "./pages/NotFoundPage/NotFound";
 import Navigation from "./component/Navigation/MenuNav";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import HomePage from "./pages/HomePage/HomePage";
@@ -22,11 +22,11 @@ function App() {
     setTheme(initialTheme);
   }, []);
 
-  const toggleTheme = useCallback(() => {
+  const toggleTheme = () => {
     const nextTheme = theme === "light" ? "dark" : "light";
     setTheme(nextTheme);
     localStorage.setItem("light", JSON.stringify(nextTheme === "light"));
-  }, [theme]);
+  };
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
@@ -41,7 +41,7 @@ function App() {
           </div>
 
           <Routes>
-            {/* <Route path="/detail/:id" element={<Details />} /> */}
+            <Route path="/detail/:id" element={<Details />} />
             <Route path="*" element={<NotFound />} />
             <Route path="/" element={<HomePage />} />
             <Route path="/contact" element={<ContactPage />} />
