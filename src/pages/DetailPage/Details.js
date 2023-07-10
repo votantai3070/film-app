@@ -1,7 +1,7 @@
 import React from "react";
 import { FilmList } from "../ListOfFilms";
 import { useParams } from "react-router-dom";
-import "./Details.css";
+import "./Details.scss";
 import { useState } from "react";
 import YoutubeVideo from "../../component/YoutubeVideo/YoutubeVideo";
 
@@ -31,8 +31,12 @@ const Details = () => {
           </div>
           <div className="product-info">
             {/* <div className="info">{film.nation}</div> */}
-            <div className="category">Thể loại: {film.category}</div>
-            <div className="info">Năm phát hành: {film.year}</div>
+            <div className="category">
+              <b>Thể loại:</b> {film.category}
+            </div>
+            <div className="info">
+              <b>Năm phát hành:</b> {film.year}
+            </div>
           </div>
           <div className="btn">
             <button className="btn-view" onClick={handleShowVideo}>

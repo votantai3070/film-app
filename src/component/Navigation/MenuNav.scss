@@ -1,0 +1,39 @@
+.navigation {
+  background-color: #5a5f69;
+  color: white;
+  padding: 10px;
+  height: 60px;
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+  }
+
+  li {
+    margin: 0 10px;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      color: orangered;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  .active {
+    color: orangered;
+    font-weight: 700;
+  }
+}

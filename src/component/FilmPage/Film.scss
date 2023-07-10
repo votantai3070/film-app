@@ -10,6 +10,10 @@
 
   margin-top: 20px;
   margin-bottom: 50px;
+
+  &:hover {
+    box-shadow: 0 2px 4px 2px;
+  }
 }
 
 .row {
@@ -35,11 +39,11 @@
 .img {
   height: 380px;
   width: 350px;
-}
 
-.img img {
-  height: 100%;
-  width: 100%;
+  img {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .footer {
@@ -47,14 +51,14 @@
   width: 400px;
   justify-content: space-around;
   margin: auto 0;
-}
 
-.nation,
-.year {
-  margin: auto 0;
-  font-size: 20px;
-  font-weight: 700;
-  animation: fletch 1s linear infinite;
+  .nation,
+  .year {
+    margin: auto 0;
+    font-size: 20px;
+    font-weight: 700;
+    animation: fletch 1s linear infinite;
+  }
 }
 
 @keyframes fletch {
@@ -71,8 +75,6 @@
   }
 }
 
-/* Film.css */
-
 .button {
   background-color: #555;
   color: #fff;
@@ -81,22 +83,18 @@
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.2s ease;
-}
 
-.button:hover {
-  background-color: #ccc;
-}
+  &:hover {
+    background-color: #ccc;
 
-.button a {
-  color: #fff;
-  text-decoration: none;
-}
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
 
-.button:hover a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.card:hover {
-  box-shadow: 0 2px 4px 2px;
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
 }

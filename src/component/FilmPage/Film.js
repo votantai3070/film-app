@@ -1,6 +1,6 @@
 import React from "react";
 import { FilmList } from "../../pages/ListOfFilms";
-import "./Film.css";
+import "./Film.scss";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Card } from "react-bootstrap";
 
